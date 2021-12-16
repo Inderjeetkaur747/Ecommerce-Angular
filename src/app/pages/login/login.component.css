@@ -1,0 +1,25 @@
+#Login{
+	padding: 1px 40px;
+	background: linear-gradient(160deg, #f3c2bd 40%, white 0%);
+    
+}
+
+.Login-row{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+   
+}
+.Login-left-col{
+	flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.Login-right-col{
+    margin-top: 2px;
+    border: none;
+    width: 450px;
+    padding: 20px;
+    transform: translate(-0%, 10%);
+    padding-left: 100px;
+}

@@ -1,0 +1,56 @@
+<section id="Login">
+  <div class="section-info" style="color:white;">
+    <h1>ELEGANT</h1>
+    <p style="color:black;">Get Acess To Your Orders, Wishlist and Recommendation</p>
+  </div>
+  <div class="Login-row">
+    <div class="Login-left-col">
+      <img src="../../../assets/contact.png">
+    </div>
+    <div class="Login-right-col">
+      <h3>Signup</h3>
+      <h5>Register Yourself!!</h5>
+      <form [formGroup]="signupForm" (ngSubmit)="signUp()">
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Name</label>
+          <input formControlName="name" type="text" class="form-control" id="exampleInputPassword1">
+          <div class="text-danger" *ngIf="signupForm.controls.name.touched">
+            <span *ngIf="signupForm.controls.name.errors?.required"> *This field is required </span>
+            <span *ngIf="signupForm.controls.name.errors?.minlength">Min 5 char Needed</span>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Mobile Number</label>
+          <input formControlName="mobile" type="text" class="form-control" id="exampleInputPassword1">
+          <div class="text-danger" *ngIf="signupForm.controls.mobile.touched">
+            <span *ngIf="signupForm.controls.mobile.errors?.required"> *This field is required </span>
+            <span *ngIf="signupForm.controls.mobile.errors?.minlength">Min 10 number Needed</span>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input formControlName="email" type="email" class="form-control" id="exampleInputEmail1"
+            aria-describedby="emailHelp">
+          <div class="text-danger" *ngIf="signupForm.controls.email.touched">
+            <span *ngIf="signupForm.controls.email.errors?.required"> *This field is required </span>
+            <span *ngIf="signupForm.controls.email.errors?.email">Please enter Valid Email</span>
+          </div>
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input formControlName="password" type="password" class="form-control" id="exampleInputPassword1">
+          <div class="text-danger" *ngIf="signupForm.controls.password.touched">
+            <span *ngIf="signupForm.controls.password.errors?.required"> *This field is required </span>
+
+          </div>
+        </div>
+
+        <button type="signup" class="btn btn-primary">Sign Up</button>
+      </form>
+      <a routerLink="/login">Already registered? click to Login!</a>
+    </div>
+  </div>
+</section>

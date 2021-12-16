@@ -1,0 +1,44 @@
+{
+    "product": [
+        {
+            "id": 1,
+            "name": "shirt",
+            "categpry_id": 5,
+            "descriptions": "description here",
+            "price": 300,
+            "is_available": true,
+            "rating": 4,
+            "review": 150,
+            "vendor_name": "abc shop",
+            "warranty": 1 
+        },
+{
+                 "id": 2,
+                "name": "shirt2",
+                "categpry_id": 1,
+                "descriptions": "description here",
+                "price": 200,
+                "is_available": true,
+                "rating": 2,
+                "review": 150,
+                "vendor_name": "acc shop",
+                "warranty": 1 
+            }
+        
+    ],
+    "comments": [
+        {
+            "id": 1,
+            "body": "some comment",
+            "PostId": 1
+        },
+        {
+            "id": 2,
+            "body": "some comment",
+            "PostId": 2
+        }
+    ],
+    "profile": {
+        "name": "typicode"
+    }
+}

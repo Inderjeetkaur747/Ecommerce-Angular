@@ -1,0 +1,53 @@
+
+button, input {
+    overflow: visible;
+    margin-left: 30px;
+    margin-top: 8px;
+    width: 450px;
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: inherit;
+   background-color:  black;
+}
+
+.color{
+    background-color: black;
+    border-color: black;
+    border-bottom: black;
+}
+
+   
+
+.form-control {
+    border-radius: 5px;
+    width: 600px;
+    margin-left: 20px;
+    margin-top:10px;
+}
+
+.search-icon {
+    position: absolute;
+    z-index: 10;
+    right: 45%;
+    top: 23px;
+
+    color: #3ec1d5;
+}
+ .logo h1 {
+    font-size: 36px;
+    margin-top: 8px;
+    padding: 0;
+    line-height: 1;
+    font-weight: bold;
+  }
+.logo h1 span {
+    color: #3ec1d5;
+  }
+
+  
